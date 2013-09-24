@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["dirtyhenry@gmail.com"]
   spec.description   = %q{Provide Tower of Hanoi backup rotation method dates"}
   spec.summary       = %q{Utility gem to calculate dates involved in a Tower of Hanoi backup rotation method}
-  spec.homepage      = ""
+  spec.homepage      = "http://dirtyhenry.github.io/noicycle/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
