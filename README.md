@@ -1,6 +1,6 @@
 # Noicycle
 
-TODO: Write a gem description
+Utility gem to calculate dates involved in a Tower of Hanoi backup rotation method.
 
 ## Installation
 
