@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Noicycle::VERSION
   spec.authors       = ["Mickaël Floc'hlay"]
   spec.email         = ["dirtyhenry@gmail.com"]
-  spec.description   = %q{Provide Tower of Hanoi backup rotation method dates"}
+  spec.description   = %q{Provide Tower of Hanoi backup rotation method dates}
   spec.summary       = %q{Utility gem to calculate dates involved in a Tower of Hanoi backup rotation method}
   spec.homepage      = "http://dirtyhenry.github.io/noicycle/"
   spec.license       = "MIT"
