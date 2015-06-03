@@ -6,7 +6,7 @@ describe Noicycle do
     ref_date = Date.parse("5th May 2013")
     for i in 3..5
       tapes = noicycle.tapes(ref_date, i)
-      tapes.size.should eq(i)
+      expect(tapes.size).to eq(i)
     end
   end
 
@@ -16,14 +16,14 @@ describe Noicycle do
     cur_date = Date.parse("24th September 2013")
     tapes = noicycle.tapes(ref_date, 7, cur_date)
 
-    tapes.size.should eq(7)
-    tapes[1].should == Date.parse("23rd September 2013")
-    tapes[2].should == Date.parse("24th September 2013")
-    tapes[3].should == Date.parse("22nd September 2013")
-    tapes[4].should == Date.parse("18th September 2013")
-    tapes[5].should == Date.parse("25th August 2013")
-    tapes[6].should == Date.parse("9th August 2013")
-    tapes[7].should == Date.parse("10th September 2013")
+    expect(tapes.size).to eq(7)
+    expect(tapes[1]).to eq Date.parse("23rd September 2013")
+    expect(tapes[2]).to eq Date.parse("24th September 2013")
+    expect(tapes[3]).to eq Date.parse("22nd September 2013")
+    expect(tapes[4]).to eq Date.parse("18th September 2013")
+    expect(tapes[5]).to eq Date.parse("25th August 2013")
+    expect(tapes[6]).to eq Date.parse("9th August 2013")
+    expect(tapes[7]).to eq Date.parse("10th September 2013")
   end
 
   it "returns the right result for a given example WEEKLY" do 
@@ -32,13 +32,13 @@ describe Noicycle do
     cur_date = Date.parse("24th September 2013")
     tapes = noicycle.tapes(ref_date, 7, cur_date, true)
 
-    tapes.size.should eq(6)
-    tapes[1].should == Date.parse("15th September 2013")
-    tapes[2].should == Date.parse("8th September 2013")
-    tapes[3].should == Date.parse("22nd September 2013")
-    tapes[4].should == Date.parse("30th June 2013")
-    tapes[5].should == Date.parse("25th August 2013")
-    tapes[6].should == nil
-    tapes[7].should == Date.parse("5th May 2013")
+    expect(tapes.size).to eq(6)
+    expect(tapes[1]).to eq Date.parse("15th September 2013")
+    expect(tapes[2]).to eq Date.parse("8th September 2013")
+    expect(tapes[3]).to eq Date.parse("22nd September 2013")
+    expect(tapes[4]).to eq Date.parse("30th June 2013")
+    expect(tapes[5]).to eq Date.parse("25th August 2013")
+    expect(tapes[6]).to eq nil
+    expect(tapes[7]).to eq Date.parse("5th May 2013")
   end
 end
